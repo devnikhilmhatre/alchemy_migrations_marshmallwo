@@ -1,0 +1,23 @@
+[Flask]
+request.json (get json data)
+request.files (get uploaded files)
+request.form (get form data)
+
+----------------------------------------------------------------------------------------------------------
+
+[Alembic]
+Always use PYTHONPATH=. with all alembic commands when using from terminal
+
+Ex.
+PYTHONPATH=. alembic revision --autogenerate -m "some comment"
+PYTHONPATH=. alembic upgrade head
+
+----------------------------------------------------------------------------------------------------------
+
+[SQLAlchemy]
+session = Session() --> strart session
+some_object = model(**kwargs)
+session.add(some_object) || session.add_all([some_object1, some_object2]) --> puts object in pending state
+session.flush() --> db hit (adds pending changes)
+session.commit() --> commit changes to db (if not.. flush-ed changes will be rolled back)
+
