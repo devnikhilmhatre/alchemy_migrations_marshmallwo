@@ -28,7 +28,7 @@ Jinja2 = "==2.10"
 Mako = "==1.0.7"
 MarkupSafe = "==1.1.0"
 SQLAlchemy = "==1.2.18"
-Werkzeug = "==0.14.1"
+Werkzeug = "==0.15.3"
 
 [requires]
 python_version = "3.6"
